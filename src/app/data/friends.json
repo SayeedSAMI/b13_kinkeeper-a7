@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Rahman",
+    "picture": "/assets/images/1 (1).svg",
+    "email": "aisha.rahman@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": [
+      "university",
+      "close friend"
+    ],
+    "bio": "We met during our first year at university and still enjoy exploring new cafés and discussing tech projects.",
+    "goal": 14,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 2,
+    "name": "Nafis Ahmed",
+    "picture": "/assets/images/1 (2).svg",
+    "email": "nafis.ahmed@example.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": [
+      "gaming",
+      "school friend"
+    ],
+    "bio": "Known each other since high school. We usually play co-op games together on weekends.",
+    "goal": 10,
+    "next_due_date": "2025-07-24"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Carter",
+    "picture": "/assets/images/1 (3).svg",
+    "email": "sophia.carter@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": [
+      "work",
+      "mentor"
+    ],
+    "bio": "Former internship teammate who regularly shares career advice and frontend development resources.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "Tanvir Hasan",
+    "picture": "/assets/images/1 (4).svg",
+    "email": "tanvir.hasan@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": [
+      "gym",
+      "neighbor"
+    ],
+    "bio": "Morning workout partner who motivates everyone to stay consistent with fitness goals.",
+    "goal": 7,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 5,
+    "name": "Emily Wilson",
+    "picture": "/assets/images/1 (5).svg",
+    "email": "emily.wilson@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": [
+      "travel",
+      "college"
+    ],
+    "bio": "We became friends during a student exchange program and still share travel recommendations.",
+    "goal": 14,
+    "next_due_date": "2025-07-13"
+  },
+  {
+    "id": 6,
+    "name": "Rafiul Karim",
+    "picture": "/assets/images/1 (6).svg",
+    "email": "rafiul.karim@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": [
+      "football",
+      "childhood friend"
+    ],
+    "bio": "Childhood friend who organizes football matches and community events every month.",
+    "goal": 10,
+    "next_due_date": "2025-07-17"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Bennett",
+    "picture": "/assets/images/1 (7).svg",
+    "email": "olivia.bennett@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": [
+      "book club",
+      "writer"
+    ],
+    "bio": "Met through a local book club. We often exchange book recommendations and writing feedback.",
+    "goal": 14,
+    "next_due_date": "2025-07-26"
+  },
+  {
+    "id": 8,
+    "name": "Imran Chowdhury",
+    "picture": "/assets/images/1 (8).svg",
+    "email": "imran.chowdhury@example.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": [
+      "startup",
+      "developer"
+    ],
+    "bio": "Worked together on several web development side projects and enjoy discussing new technologies.",
+    "goal": 14,
+    "next_due_date": "2025-07-16"
+  },
+  {
+    "id": 9,
+    "name": "Farhana Islam",
+    "picture": "/assets/images/1 (9).svg",
+    "email": "farhana.islam@example.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": [
+      "photography",
+      "university"
+    ],
+    "bio": "Photography club friend who enjoys organizing weekend photo walks around the city.",
+    "goal": 14,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 10,
+    "name": "Daniel Brooks",
+    "picture": "/assets/images/1 (10).svg",
+    "email": "daniel.brooks@example.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": [
+      "volunteer",
+      "travel"
+    ],
+    "bio": "Met while volunteering at a community event and now plan short trips together whenever possible.",
+    "goal": 14,
+    "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 11,
+    "name": "Mahin Sarker",
+    "picture": "/assets/images/1 (11).svg",
+    "email": "mahin.sarker@example.com",
+    "days_since_contact": 8,
+    "status": "almost due",
+    "tags": [
+      "coding",
+      "university"
+    ],
+    "bio": "Classmate from university who enjoys participating in hackathons and discussing software engineering topics.",
+    "goal": 10,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 12,
+    "name": "Isabella Moore",
+    "picture": "/assets/images/1 (12).svg",
+    "email": "isabella.moore@example.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": [
+      "music",
+      "online friend"
+    ],
+    "bio": "Connected through an online music community and frequently share playlists and concert recommendations.",
+    "goal": 14,
+    "next_due_date": "2025-07-27"
+  }
+]
