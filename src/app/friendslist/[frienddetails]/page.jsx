@@ -3,8 +3,9 @@ import dataset from '../../data/friends.json'
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbAlarmSnooze } from 'react-icons/tb';
-import { IoArchiveOutline } from 'react-icons/io5';
+import { IoArchiveOutline, IoCallOutline, IoVideocamSharp } from 'react-icons/io5';
 import { MdDeleteOutline } from 'react-icons/md';
+import { BsChatText } from 'react-icons/bs';
 
 
 const FriendListDetails = async ({ params }) => {
@@ -66,17 +67,36 @@ const FriendListDetails = async ({ params }) => {
                 </div>
 
                 <div className='border border-solid border-[#fff] rounded-2xl p-6  flex flex-col gap-4 shadow my-7'>
-                    <h1 className='text-[#244D3F] text-[18px] font-medium text-2xl'>Relationship Goal</h1>
+                    <div className='flex gap-150'>
+                        <h1 className='text-[#244D3F] text-[18px] font-medium text-2xl'>Relationship Goal</h1>
+                        <button className='btn w-9 h-7 '>Edit</button>
+                    </div>
                     <p className='font-bold text-[18px]'><span className='text-[#64748B] font-normal '>Connect Every</span> 30 days</p>
                 </div>
+
+
                 <div className='border border-solid border-[#fff] rounded-2xl p-6  flex flex-col gap-4 shadow'>
                     <h1 className='text-[#244D3F] text-[18px] font-medium text-2xl'>Quick Check-In</h1>
                     <div className="flex  text-center gap-11 my-5 mx-auto ">
-                        <div className="p-8  lg:w-[250px] text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
+                        <div className="btn h-25 p-8 flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc]  align-middle justify-center rounded-2xl border border-solid border-[#fff] shadow">
 
-                            <div className="font-semibold text-4xl mb-7">{data.days_since_contact}</div>
+                            <div className="flex font-semibold text-4xl mx-18"><IoCallOutline /></div>
 
-                            <div className="stat-title text-[#64748B]">Days Since Contact</div>
+                            <div className="stat-title text-[#64748B]">Call</div>
+
+                        </div>
+                        <div className="btn h-25 p-8  flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
+
+                            <div className="font-semibold text-4xl mx-18"><BsChatText /></div>
+
+                            <div className="stat-title text-[#64748B]">Text</div>
+
+                        </div>
+                        <div className="btn h-25 p-8 flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
+
+                            <div className="font-semibold text-4xl mx-18 "><IoVideocamSharp /></div>
+
+                            <div className="stat-title text-[#64748B]">Video</div>
 
                         </div>
                     </div>
