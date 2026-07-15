@@ -12,7 +12,7 @@ const BannerPage = () => {
                         Your personal shelf of meaningful connections. Browse, tend, and nurture the
                         relationships that matter most.
                     </p>
-                    <button className="btn btn-primary bg-[#244D3F]"><FaPlus /> Add a Friend</button>
+                    <a href='#targer-section'  className="btn btn-primary bg-[#244D3F]"><FaPlus /> Add a Friend</a>
                 </div>
             </div>
 

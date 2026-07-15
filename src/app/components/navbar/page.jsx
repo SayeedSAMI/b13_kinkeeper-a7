@@ -20,8 +20,8 @@ const NavbarPage = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li className='text-[#64748B] text-[16px] font-medium'><a>Home</a></li>
-                        <li className='text-[#64748B] text-[16px] font-medium'><a>Timeline</a></li>
+                        <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/' ? "bg-[#244D3F] text-white" : ""}`} href='/'>Home</Link></li>
+                        <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/timeline' ? "bg-[#244D3F] text-white" : ""}`} href='/timeline'>Timeline</Link></li>
                         <li className='text-[#64748B] text-[16px] font-medium'><a>Stats</a></li>
                     </ul>
                 </div>
@@ -30,7 +30,7 @@ const NavbarPage = () => {
             <div className="navbar-end hidden lg:flex ">
                 <ul className="menu menu-horizontal px-1">
                     <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/' ? "bg-[#244D3F] text-white" : ""}`} href='/'><IoHomeOutline /> Home</Link></li>
-                    <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/timeline' ? "bg-[#244D3F] text-white" : ""}`} href='/'><FaRegClock /> Timeline</Link></li>
+                    <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/timeline' ? "bg-[#244D3F] text-white" : ""}`} href='/timeline'><FaRegClock /> Timeline</Link></li>
                     <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/status' ? "bg-[#244D3F] text-white" : ""}`} href='/'><ImStatsDots /> Stats</Link></li>
                 </ul>
             </div>

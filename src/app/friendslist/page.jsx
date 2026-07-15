@@ -7,7 +7,7 @@ const HomePageFriendList = async () => {
 
     // console.log(dataset);
     return (
-        <div className='grid grid-cols-4 gap-10 my-12 mx-auto' >
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 my-12 mx-auto' >
             {
                 dataset.map((data) => (
                     <Link key={data.id} href={`/friendslist/${data.id}`}>
