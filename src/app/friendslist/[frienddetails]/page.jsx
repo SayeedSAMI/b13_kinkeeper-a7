@@ -40,7 +40,7 @@ const FriendListDetails = async ({ params }) => {
                 <button className='btn w-75 text-red-500 text-[16px] font-medium rounded-2xl shadow border-none bg-white border-white '><MdDeleteOutline /> Delete</button>
             </div>
             <div>
-                <div className="flex  text-center gap-11 my-5 mx-auto ">
+                <div className="flex  text-center gap-11 my-5 mt-0 mx-auto ">
                     <div className="p-8  lg:w-[250px] text-center bg-[#fff] rounded-2xl border border-solid border-[#fff] shadow">
 
                         <div className="font-semibold text-4xl mb-7">{data.days_since_contact}</div>
