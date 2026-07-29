@@ -2,16 +2,17 @@ import React from 'react';
 import dataset from '../data/friends.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import FriendListDetails from './[frienddetails]/page';
+import CallButton from '../components/buttons/frienddetailsbutton/page';
 
-const HomePageFriendList = async () => {
+const HomePageFriendList = () => {
 
-    // console.log(dataset);
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 my-12 mx-auto' >
             {
                 dataset.map((data) => (
                     <Link key={data.id} href={`/friendslist/${data.id}`}>
-                        <div className='bg-[#fff] w-[300px] p-7 border border-solid border-[#fff] rounded-2xl space-y-1 text-center justify-center mx-auto items-center' >
+                        <div className='bg-[#fff] p-7 border border-solid border-[#fff] rounded-2xl space-y-1 text-center justify-center mx-auto items-center' >
 
                             <Image className='text-center justify-center mx-auto items-center' width={150} height={150} src={data.picture} alt={data.name}></Image>
                             <h1 className='text-2xl font-semibold text-[#1F2937] text-center justify-center mx-auto items-center'>{data.name}</h1>
@@ -27,6 +28,7 @@ const HomePageFriendList = async () => {
 
                 ))
             }
+           
         </div >
     );
 };

@@ -6,19 +6,20 @@ import { TbAlarmSnooze } from 'react-icons/tb';
 import { IoArchiveOutline, IoCallOutline, IoVideocamSharp } from 'react-icons/io5';
 import { MdDeleteOutline } from 'react-icons/md';
 import { BsChatText } from 'react-icons/bs';
+import CallButton from '@/app/components/buttons/frienddetailsbutton/page';
+import ButtonStatePage from '@/app/components/buttons/page';
 
 
 const FriendListDetails = async ({ params }) => {
     const { frienddetails } = await params
 
-    // [0].bio
-
     const data = dataset.find(d => d.id == frienddetails)
-    // const data = await res.json();
+
     console.log(frienddetails);
     console.log(data);
+
     return (
-        <div className='mx-55 gap-10 my-20 flex'>
+        <div className='mx-55 gap-10 my-20 flex justify-center'>
             <div className='flex flex-col gap-4'>
                 <div className='bg-[#fff] w-[300px] p-7 border border-solid border-[#fff] rounded-2xl space-y-1 text-center justify-center items-center shadow' >
 
@@ -66,7 +67,7 @@ const FriendListDetails = async ({ params }) => {
 
                 </div>
 
-                <div className='border border-solid border-[#fff] rounded-2xl p-6  flex flex-col gap-4 shadow my-7'>
+                <div className='border border-solid border-white rounded-2xl p-6  flex flex-col gap-4 shadow my-7'>
                     <div className='flex gap-150'>
                         <h1 className='text-[#244D3F] text-[18px] font-medium text-2xl'>Relationship Goal</h1>
                         <button className='btn w-9 h-7 '>Edit</button>
@@ -75,24 +76,25 @@ const FriendListDetails = async ({ params }) => {
                 </div>
 
 
-                <div className='border border-solid border-[#fff] rounded-2xl p-6  flex flex-col gap-4 shadow'>
+                <div className='border border-solid border-white rounded-2xl p-6  flex flex-col gap-4 shadow'>
                     <h1 className='text-[#244D3F] text-[18px] font-medium text-2xl'>Quick Check-In</h1>
                     <div className="flex  text-center gap-11 my-5 mx-auto ">
-                        <div className="btn h-25 p-8 flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc]  align-middle justify-center rounded-2xl border border-solid border-[#fff] shadow">
+                        <ButtonStatePage id={data.id}></ButtonStatePage>
+                            {/* <div className="btn h-25 p-8 flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc]  align-middle justify-center rounded-2xl border border-solid border-[#fff] shadow">
 
                             <div className="flex font-semibold text-4xl mx-18"><IoCallOutline /></div>
 
                             <div className="stat-title text-[#64748B]">Call</div>
 
-                        </div>
-                        <div className="btn h-25 p-8  flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
+                        </div> */}
+                        <div className="btn h-25 p-8  flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
 
                             <div className="font-semibold text-4xl mx-18"><BsChatText /></div>
 
                             <div className="stat-title text-[#64748B]">Text</div>
 
                         </div>
-                        <div className="btn h-25 p-8 flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
+                        <div className="btn h-25 p-8 flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
 
                             <div className="font-semibold text-4xl mx-18 "><IoVideocamSharp /></div>
 
