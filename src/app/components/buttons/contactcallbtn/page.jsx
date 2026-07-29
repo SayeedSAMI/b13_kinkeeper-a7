@@ -11,14 +11,16 @@ const CallButton = ({ id, timelinelist, setTimelinelist, }) => {
         setTimelinelist(prev => [...prev, {
             name: friend.name,
             date: new Date(),
-            contacttype: 'call',
+            contacttype: 'Meetup',
+            image: '/assets/icon/call.png',
+
         },
         ]);
     }
 
 
     return (
-        <div onClick={() => handleAddtoTimeline()} className="btn h-25 p-8 flex flex-col lg:w-[250px] gap-5 text-center bg-[#f8fafc]  align-middle justify-center rounded-2xl border border-solid border-[#fff] shadow">
+        <div onClick={() => handleAddtoTimeline()} className="btn h-25 p-8 flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc]  align-middle justify-center rounded-2xl border border-solid border-[#fff] shadow">
 
             <div className="flex font-semibold text-4xl mx-18"><IoCallOutline /></div>
 

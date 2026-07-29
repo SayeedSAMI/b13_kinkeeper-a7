@@ -12,6 +12,7 @@ const TextButton = ({ id, timelinelist, setTimelinelist, }) => {
             name: friend.name,
             date: new Date(),
             contacttype: 'Text',
+            image: '/assets/icon/text.png',
         },
         ]);
     }

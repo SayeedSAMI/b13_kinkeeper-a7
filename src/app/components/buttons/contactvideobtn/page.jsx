@@ -11,6 +11,8 @@ const VideoButton = ({ id, timelinelist, setTimelinelist, }) => {
             name: friend.name,
             date: new Date(),
             contacttype: 'Video',
+            image: '/assets/icon/video.png',
+
         },
         ]);
     }
