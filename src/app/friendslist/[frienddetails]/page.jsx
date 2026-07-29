@@ -6,7 +6,7 @@ import { TbAlarmSnooze } from 'react-icons/tb';
 import { IoArchiveOutline, IoCallOutline, IoVideocamSharp } from 'react-icons/io5';
 import { MdDeleteOutline } from 'react-icons/md';
 import { BsChatText } from 'react-icons/bs';
-import CallButton from '@/app/components/buttons/frienddetailsbutton/page';
+import CallButton from '@/app/components/buttons/contactcallbtn/page';
 import ButtonStatePage from '@/app/components/buttons/page';
 
 
@@ -78,29 +78,8 @@ const FriendListDetails = async ({ params }) => {
 
                 <div className='border border-solid border-white rounded-2xl p-6  flex flex-col gap-4 shadow'>
                     <h1 className='text-[#244D3F] text-[18px] font-medium text-2xl'>Quick Check-In</h1>
-                    <div className="flex  text-center gap-11 my-5 mx-auto ">
+                    <div>
                         <ButtonStatePage id={data.id}></ButtonStatePage>
-                            {/* <div className="btn h-25 p-8 flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc]  align-middle justify-center rounded-2xl border border-solid border-[#fff] shadow">
-
-                            <div className="flex font-semibold text-4xl mx-18"><IoCallOutline /></div>
-
-                            <div className="stat-title text-[#64748B]">Call</div>
-
-                        </div> */}
-                        <div className="btn h-25 p-8  flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
-
-                            <div className="font-semibold text-4xl mx-18"><BsChatText /></div>
-
-                            <div className="stat-title text-[#64748B]">Text</div>
-
-                        </div>
-                        <div className="btn h-25 p-8 flex flex-col lg:w-62.5 gap-5 text-center bg-[#f8fafc] rounded-2xl border border-solid border-[#fff] shadow">
-
-                            <div className="font-semibold text-4xl mx-18 "><IoVideocamSharp /></div>
-
-                            <div className="stat-title text-[#64748B]">Video</div>
-
-                        </div>
                     </div>
                 </div>
             </div>

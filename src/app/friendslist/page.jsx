@@ -3,7 +3,7 @@ import dataset from '../data/friends.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import FriendListDetails from './[frienddetails]/page';
-import CallButton from '../components/buttons/frienddetailsbutton/page';
+import CallButton from '../components/buttons/contactcallbtn/page';
 
 const HomePageFriendList = () => {
 

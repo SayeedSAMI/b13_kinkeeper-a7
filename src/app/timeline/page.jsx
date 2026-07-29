@@ -13,7 +13,7 @@ const TimelinePage = ({ timelinelist, setTimelinelist }) => {
                 <div className='text-center items-center'><Image src='/assets/icon/meetup.png' alt='Logo' width={30} height={30}></Image></div>
                 <div >
                     <h1 className='text-2xl font-medium text-[#244D3F]'>Meetup <span className='text-[#64748B] text-[18px] font-normal'>with tom backer</span></h1>
-                    <p className='text-[#64748B] text-[16px] font-normal'>March 13, 2003</p>
+                    {/* <p className='text-[#64748B] text-[16px] font-normal'>{item.date.toDateString()}</p> */}
                 </div>
             </div>
         </div>

@@ -3,12 +3,17 @@ import React from 'react';
 import { IoCallOutline } from 'react-icons/io5';
 import dataset from '../../../data/friends.json'
 
-const CallButton = ({ id,timelinelist, setTimelinelist, }) => {
+const CallButton = ({ id, timelinelist, setTimelinelist, }) => {
 
     const friend = dataset.find(item => item.id == id);
 
     const handleAddtoTimeline = () => {
-        setTimelinelist(prev => [...prev, friend.name]);
+        setTimelinelist(prev => [...prev, {
+            name: friend.name,
+            date: new Date(),
+            contacttype: 'call',
+        },
+        ]);
     }
 
 
