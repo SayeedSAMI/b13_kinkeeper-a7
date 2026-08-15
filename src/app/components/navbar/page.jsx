@@ -22,7 +22,7 @@ const NavbarPage = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/' ? "bg-[#244D3F] text-white" : ""}`} href='/'>Home</Link></li>
                         <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/timeline' ? "bg-[#244D3F] text-white" : ""}`} href='/timeline'>Timeline</Link></li>
-                        <li className='text-[#64748B] text-[16px] font-medium'><a>Stats</a></li>
+                        <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/status' ? "bg-[#244D3F] text-white" : ""}`} href='/status'>Stats</Link></li>
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-xl"><Image width={150} height={22} src="/assets/icon/logo.png" alt='This is kin keeper logo'></Image></a>
@@ -31,7 +31,7 @@ const NavbarPage = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/' ? "bg-[#244D3F] text-white" : ""}`} href='/'><IoHomeOutline /> Home</Link></li>
                     <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/timeline' ? "bg-[#244D3F] text-white" : ""}`} href='/timeline'><FaRegClock /> Timeline</Link></li>
-                    <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/status' ? "bg-[#244D3F] text-white" : ""}`} href='/'><ImStatsDots /> Stats</Link></li>
+                    <li className='text-[#64748B] text-[16px] font-medium'><Link className={`${pathname === '/status' ? "bg-[#244D3F] text-white" : ""}`} href='/status'><ImStatsDots /> Stats</Link></li>
                 </ul>
             </div>
         </div>
