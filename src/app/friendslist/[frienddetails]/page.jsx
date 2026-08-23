@@ -10,10 +10,10 @@ import CallButton from '@/app/components/buttons/contactcallbtn/page';
 import ButtonStatePage from '@/app/components/buttons/page';
 import { ToastContainer, toast } from 'react-toastify';
 
-export const metadata = {
-  title: "Friend Details",
-  description: "Place to connect with friends again",
-};
+// export const metadata = {
+//   title: "Friend Details",
+//   description: "Place to connect with friends again",
+// };
 
 
 

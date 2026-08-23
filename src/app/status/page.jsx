@@ -19,10 +19,10 @@ import { TimeContext } from '../context/page';
 //     { name: 'D2', value: 50 },
 // ];
 
-export const metadata = {
-  title: "Status",
-  description: "Place to connect with friends again",
-};
+// export const metadata = {
+//   title: "Status",
+//   description: "Place to connect with friends again",
+// };
 
 
 

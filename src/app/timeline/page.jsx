@@ -5,10 +5,10 @@ import { TimeContext } from '@/app/context/page';
 
 // import logoimage from '../../../public/assets/icon/call.png';
 // import logoimage from '';
-export const metadata = {
-  title: "Timeline",
-  description: "Place to connect with friends again",
-};
+// export const metadata = {
+//   title: "Timeline",
+//   description: "Place to connect with friends again",
+// };
 
 
 const TimelinePage = () => {
