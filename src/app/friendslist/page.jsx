@@ -5,7 +5,9 @@ import Link from 'next/link';
 import FriendListDetails from './[frienddetails]/page';
 import CallButton from '../components/buttons/contactcallbtn/page';
 
+
 const HomePageFriendList = () => {
+    
 
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 my-12 mx-auto' >
