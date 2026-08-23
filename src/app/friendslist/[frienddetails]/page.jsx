@@ -8,12 +8,14 @@ import { MdDeleteOutline } from 'react-icons/md';
 import { BsChatText } from 'react-icons/bs';
 import CallButton from '@/app/components/buttons/contactcallbtn/page';
 import ButtonStatePage from '@/app/components/buttons/page';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 const FriendListDetails = async ({ params }) => {
     const { frienddetails } = await params
 
     const data = dataset.find(d => d.id == frienddetails)
+
+
 
     console.log(frienddetails);
     console.log(data);

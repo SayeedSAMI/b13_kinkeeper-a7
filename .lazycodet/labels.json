@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "updatedAt": 1787485271810,
+  "labels": [
+    {
+      "id": "default",
+      "name": "Done",
+      "symbol": "✅"
+    }
+  ]
+}
